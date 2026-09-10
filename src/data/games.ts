@@ -1,0 +1,56 @@
+export const GAMES = [
+  {
+    id: 'memory-match',
+    name: 'Memory Match',
+    description: 'Match pairs of cards to exercise memory and concentration',
+    icon: '🎮',
+    benefits: ['Memory', 'Attention', 'Coordination'],
+    difficulties: ['easy', 'medium', 'hard'],
+    duration: '3-5 min',
+    bestTime: 'Morning',
+  },
+  {
+    id: 'object-recall',
+    name: 'Object Recall',
+    description: 'Remember objects shown briefly, then find them from options',
+    icon: '👁️',
+    benefits: ['Visual Memory', 'Focus', 'Recognition'],
+    difficulties: ['easy', 'medium', 'hard'],
+    duration: '4-6 min',
+    bestTime: 'Afternoon',
+  },
+  {
+    id: 'pattern-recall',
+    name: 'Pattern Recall',
+    description: 'Reproduce color sequences that increase in difficulty',
+    icon: '🌈',
+    benefits: ['Pattern Recognition', 'Sequencing', 'Logic'],
+    difficulties: ['easy', 'medium', 'hard'],
+    duration: '3-5 min',
+    bestTime: 'Any time',
+  },
+  {
+    id: 'routine-recall',
+    name: 'Routine Recall',
+    description: 'Arrange daily activities in the correct order',
+    icon: '⏰',
+    benefits: ['Time Sense', 'Organization', 'Memory'],
+    difficulties: ['easy', 'medium', 'hard'],
+    duration: '2-4 min',
+    bestTime: 'Evening',
+  },
+];
+
+export const DAILY_TASKS = [
+  { id: 'medicine', icon: '💊', label: 'Take Medicine', description: 'Take your daily medication', time: 'Morning' },
+  { id: 'water', icon: '💧', label: 'Drink Water', description: 'Stay hydrated throughout the day', time: 'Anytime' },
+  { id: 'game', icon: '🧠', label: 'Brain Game', description: 'Play a cognitive game', time: 'Anytime' },
+  { id: 'walk', icon: '🚶', label: 'Go for Walk', description: 'Take a gentle walk', time: 'Afternoon' },
+  {
+    id: 'appointment',
+    icon: '📅',
+    label: 'Appointment',
+    description: 'Attend your appointments',
+    time: 'As scheduled',
+  },
+];

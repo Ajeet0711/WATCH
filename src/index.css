@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Bridge the v3-style tailwind.config.js (wellness palette, keyframes,
+   animations) into Tailwind v4's CSS-first pipeline. */
+@config "../tailwind.config.js";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: theme(fontFamily.sans);
+  }
+
+  /* Visible keyboard focus everywhere — the app is used with assistive tech. */
+  :focus-visible {
+    @apply outline-none ring-4 ring-wellness-400 ring-offset-2;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
